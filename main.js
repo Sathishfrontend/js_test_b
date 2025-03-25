@@ -14,7 +14,7 @@ class Invoice {
     calculateLateFee(currentDate) {
         // milliseconds in one day
         const oneDayInMilliSeconds = 24 * 60 * 60 * 1000; 
-        // calculate how many days due from the actual due date
+        // calculate how many days late from the actual due date
         const daysLateForFeePayment = Math.floor((currentDate - this.dueDate) / oneDayInMilliSeconds); 
         return daysLateForFeePayment > 0 ? `$ ${daysLateForFeePayment * 5}` : 0;
       }

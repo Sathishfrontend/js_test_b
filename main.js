@@ -73,6 +73,8 @@ function extractEmails(invoiceText) {
 }
 
 
+
+// as per the expectations
 // followed naming convention for classes - pascalCase for functions and variables camelCase
 // followed semicolon in each line ending 
 // followed adding comments for each thing which need more clarity
